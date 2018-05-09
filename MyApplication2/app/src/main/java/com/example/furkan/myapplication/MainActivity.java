@@ -350,36 +350,36 @@ public class MainActivity extends Activity  {
 
 
                         tempCoverRed = (rgbValuesCoverRed[Xi][Xj] + 2 * rgbValuesCoverRed[Yi][Yj] + 3*rgbValuesCoverRed[Zi][Zj]) % 7;
-                        fark = tempCoverRed - Integer.parseInt(BeslikValuesSecretRed[i][j].substring(k,k+1));
+                        fark = tempCoverRed - Integer.parseInt(yedilikValuesSecretRed[i][j].substring(k,k+1));
                         fark = (fark + 7) % 7;
                         if (fark == 1) rgbValuesCoverRed[Xi][Xj] -= 1;
                         if (fark == 2) rgbValuesCoverRed[Yi][Yj] -= 1;
                         if (fark == 3) rgbValuesCoverRed[Zi][Zj] -= 1;
                         if (fark == 4) rgbValuesCoverRed[Zi][Zj] += 1;
-                        if (fark == 6) rgbValuesCoverRed[Yi][Yj] += 1;
-                        if (fark == 4) rgbValuesCoverRed[Xi][Xj] += 1;
+                        if (fark == 5) rgbValuesCoverRed[Yi][Yj] += 1;
+                        if (fark == 6) rgbValuesCoverRed[Xi][Xj] += 1;
 
                         tempCoverGreen= (rgbValuesCoverGreen[Xi][Xj] + 2 * rgbValuesCoverGreen[Yi][Yj] + 3*rgbValuesCoverGreen[Zi][Zj]) % 7;
-                        fark = tempCoverGreen - Integer.parseInt(BeslikValuesSecretGreen[i][j].substring(k,k+1));
+                        fark = tempCoverGreen - Integer.parseInt(yedilikValuesSecretGreen[i][j].substring(k,k+1));
                         fark = (fark + 7) % 7;
 
                         if (fark == 1) rgbValuesCoverGreen[Xi][Xj] -= 1;
                         if (fark == 2) rgbValuesCoverGreen[Yi][Yj] -= 1;
                         if (fark == 3) rgbValuesCoverGreen[Zi][Zj] -= 1;
                         if (fark == 4) rgbValuesCoverGreen[Zi][Zj] += 1;
-                        if (fark == 6) rgbValuesCoverGreen[Yi][Yj] += 1;
-                        if (fark == 4) rgbValuesCoverGreen[Xi][Xj] += 1;
+                        if (fark == 5) rgbValuesCoverGreen[Yi][Yj] += 1;
+                        if (fark == 6) rgbValuesCoverGreen[Xi][Xj] += 1;
 
                         tempCoverBlue=(rgbValuesCoverBlue[Xi][Xj] + 2 * rgbValuesCoverBlue[Yi][Yj] + 3*rgbValuesCoverBlue[Zi][Zj]) % 7;
-                        fark = tempCoverBlue - Integer.parseInt(BeslikValuesSecretBlue[i][j].substring(k,k+1));
+                        fark = tempCoverBlue - Integer.parseInt(yedilikValuesSecretBlue[i][j].substring(k,k+1));
                         fark = (fark + 7) % 7;
 
                         if (fark == 1) rgbValuesCoverBlue[Xi][Xj] -= 1;
                         if (fark == 2) rgbValuesCoverBlue[Yi][Yj] -= 1;
                         if (fark == 3) rgbValuesCoverBlue[Zi][Zj] -= 1;
                         if (fark == 4) rgbValuesCoverBlue[Zi][Zj] += 1;
-                        if (fark == 6) rgbValuesCoverBlue[Yi][Yj] += 1;
-                        if (fark == 4) rgbValuesCoverBlue[Xi][Xj] += 1;
+                        if (fark == 5) rgbValuesCoverBlue[Yi][Yj] += 1;
+                        if (fark == 6) rgbValuesCoverBlue[Xi][Xj] += 1;
 
 
 
